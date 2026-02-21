@@ -1,8 +1,12 @@
 SDET Coding Challenge - QA Report
+
 1. Executive Summary
+
 This report documents the findings of the testing phase for the LoanPro Calculator CLI. While the application handles basic arithmetic and input validation correctly, several critical precision bugs were identified. These issues directly contradict the technical requirements specified in the documentation (Section 5.3), specifically regarding the 16-digit precision guarantee.
 
+
 2. Bug Findings
+
 BUG-01: Precision Loss in Addition (Requirement Regression)
 Command: docker run --rm public.ecr.aws/l4q9w4c5/loanpro-calculator-cli add 1.000000000000001 1.000000000000001
 
